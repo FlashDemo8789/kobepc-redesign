@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Kobe PC Services - 神戸のパソコン修理専門店</title>
+    <meta name="description" content="Kobe PC Servicesへのお問い合わせ。電話078-332-6626、オンライン予約、メールでのお問い合わせが可能。営業時間9:00-18:00、神戸市内出張対応。">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>お問い合わせ</h1>
+                    <p>お困りの際は、お気軽にご連絡ください。迅速に対応いたします。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-methods">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ方法</h2>
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <div class="method-icon">📞</div>
+                        <h3>お電話</h3>
+                        <p class="method-info">078-332-6626</p>
+                        <p class="method-desc">営業時間内（9:00-18:00）にお電話ください。緊急時は夜間対応も可能です。</p>
+                        <a href="tel:078-332-6626" class="method-button">今すぐ電話</a>
+                    </div>
+                    
+                    <div class="contact-method featured">
+                        <div class="method-icon">💻</div>
+                        <h3>オンライン予約</h3>
+                        <p class="method-info">24時間受付</p>
+                        <p class="method-desc">オンラインで修理予約が可能。お客様の都合の良い時間を選択できます。</p>
+                        <a href="https://www.kobepc.com/reserve" class="method-button">予約する</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">📧</div>
+                        <h3>メール</h3>
+                        <p class="method-info">info@kobepc.com</p>
+                        <p class="method-desc">詳しい症状や画像を添付してお送りください。24時間以内に返信いたします。</p>
+                        <a href="mailto:info@kobepc.com" class="method-button">メール送信</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">🚚</div>
+                        <h3>出張修理</h3>
+                        <p class="method-info">神戸市内対応</p>
+                        <p class="method-desc">お客様のご自宅やオフィスまでお伺いします。出張費は神戸市内無料。</p>
+                        <a href="tel:078-332-6626" class="method-button">出張依頼</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>お問い合わせフォーム</h2>
+                        <p>以下のフォームからもお問い合わせいただけます。必須項目をご入力ください。</p>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">修理内容 <span class="required">*</span></label>
+                                <select id="service" name="service" required>
+                                    <option value="">選択してください</option>
+                                    <option value="基本修理">基本修理（ソフトウェア関連）</option>
+                                    <option value="ハードウェア修理">ハードウェア修理</option>
+                                    <option value="データ復旧">データ復旧</option>
+                                    <option value="スマートフォン修理">スマートフォン修理</option>
+                                    <option value="出張修理">出張修理</option>
+                                    <option value="見積もり依頼">見積もり依頼</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgency">緊急度</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="urgency" value="低"> 急ぎではない
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="urgency" value="中" checked> 数日以内
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="urgency" value="高"> 緊急（当日対応希望）
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="device">機器情報</label>
+                            <input type="text" id="device" name="device" placeholder="例：MacBook Pro 2020, iPhone 12, Dell Inspiron など">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">症状の詳細 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="症状について詳しくお聞かせください。いつから、どのような症状が出ているかなど"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    メールマガジンの配信を希望する（修理のコツやキャンペーン情報）
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="submit-button">お問い合わせを送信</button>
+                            <p class="form-note">送信後、24時間以内にご返信いたします。</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="office-info">
+            <div class="container">
+                <div class="info-content">
+                    <div class="office-details">
+                        <h2>店舗情報</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-content-text">
+                                    <h4>住所</h4>
+                                    <p>〒650-0001<br>兵庫県神戸市中央区加納町6-5-1<br>フェリシティー神戸21 2F</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">🕒</div>
+                                <div class="info-content-text">
+                                    <h4>営業時間</h4>
+                                    <p>月曜日 - 土曜日：9:00 - 18:00<br>日曜日・祝日：10:00 - 16:00<br>※年末年始は休業</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">🚇</div>
+                                <div class="info-content-text">
+                                    <h4>アクセス</h4>
+                                    <p>JR三ノ宮駅から徒歩5分<br>阪急神戸三宮駅から徒歩3分<br>地下鉄三宮駅から徒歩2分</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">🅿️</div>
+                                <div class="info-content-text">
+                                    <h4>駐車場</h4>
+                                    <p>提携駐車場あり<br>修理時間中は駐車料金無料<br>※事前にお声がけください</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>アクセスマップ</h3>
+                            <div class="map-visual">🗺️</div>
+                            <p>三宮駅から徒歩すぐの便利な立地です。</p>
+                            <div class="map-directions">
+                                <h4>主要駅からのアクセス</h4>
+                                <ul>
+                                    <li>JR三ノ宮駅 中央口から南へ徒歩5分</li>
+                                    <li>阪急神戸三宮駅 東口から南東へ徒歩3分</li>
+                                    <li>阪神神戸三宮駅 A23出口から徒歩4分</li>
+                                    <li>地下鉄三宮駅 東出口1から徒歩2分</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-contact">
+            <div class="container">
+                <div class="emergency-info">
+                    <h2>緊急時の対応</h2>
+                    <div class="emergency-grid">
+                        <div class="emergency-card">
+                            <div class="emergency-icon">🚨</div>
+                            <h3>緊急修理サービス</h3>
+                            <p>重要なプレゼンや作業が控えている場合の緊急対応を行っています。</p>
+                            <ul>
+                                <li>営業時間外対応（追加料金50%）</li>
+                                <li>当日修理完了保証</li>
+                                <li>代替機貸し出しサービス</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="emergency-card">
+                            <div class="emergency-icon">📱</div>
+                            <h3>リモートサポート</h3>
+                            <p>軽微な問題であれば、リモートでサポートいたします。</p>
+                            <ul>
+                                <li>電話でのトラブルシューティング</li>
+                                <li>画面共有によるサポート</li>
+                                <li>基本的な設定変更の指導</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/shared.js"></script>
+    <script>
+        // Enhanced contact form handling
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Validation
+                    if (!data.name || !data.email || !data.service || !data.message) {
+                        alert('必須項目をすべて入力してください。');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(data.email)) {
+                        alert('有効なメールアドレスを入力してください。');
+                        return;
+                    }
+                    
+                    // Submit simulation
+                    const submitButton = contactForm.querySelector('.submit-button');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = '送信中...';
+                    submitButton.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert('お問い合わせありがとうございます。24時間以内にご返信いたします。緊急の場合は直接お電話ください。');
+                        contactForm.reset();
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

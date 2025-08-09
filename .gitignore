@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Test files
+test-links.html
+
+# Server files
+server.js
+start.ps1
+start_server.bat
+
+# Temporary files
+*.tmp
+*.temp
